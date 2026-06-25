@@ -1,8 +1,11 @@
 import { useState } from "react";
 import "../styles/hero.css";
+import ConfigModal from "./ConfigModal";
+import Loading from "./Loading";
 
 function Hero({ setWebsitePrompt }) {
-  const [prompt, setPrompt] = useState("");
+  const [showModal, setShowModal] = useState(false);
+  const [isConfigModalOpen, setIsConfigModalOpen] = useState(false);
 
   const generateWebsite = async () => {
     try {
@@ -44,9 +47,20 @@ function Hero({ setWebsitePrompt }) {
 
       <br />
 
-      <button onClick={generateWebsite}>
+      <button onClick={() => setShowModal(true)}>
         🚀 Generate Website
       </button>
+
+      <ConfigModal
+        isOpen={showModal}
+        onClose={() => setShowModal(false)}
+        onGenerate={
+          () => {
+            setShowModal(false);
+            generateWebsite();
+          }
+        }
+      />
     </section>
   );
 }
