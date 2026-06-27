@@ -11,34 +11,72 @@ app.get("/", (req, res) => {
 });
 
 app.post("/generate", (req, res) => {
-  const { prompt } = req.body;
+
+  const {
+    prompt,
+    theme,
+    color,
+    template,
+    darkMode
+  } = req.body;
 
   let response = {};
 
-  if (prompt.toLowerCase().includes("restaurant")) {
+  if (template === "Restaurant") {
+
     response = {
       title: "Restaurant Website",
-      heading: "Delicious Food",
-      description: "Fresh food served every day.",
-      button: "Book a Table",
+      heading: "Welcome to Delicious Bites",
+      description: "Fresh food crafted with passion.",
+      button: "Reserve Table",
+
+      theme,
+      color,
+      template,
+      darkMode,
     };
-  } else if (prompt.toLowerCase().includes("portfolio")) {
+
+  }
+
+  else if (template === "Portfolio") {
+
     response = {
       title: "Portfolio Website",
       heading: "John Doe",
-      description: "Frontend Developer & Designer",
-      button: "Contact Me",
+      description: "Creative Full Stack Developer",
+
+      button: "View Projects",
+
+      theme,
+      color,
+      template,
+      darkMode,
     };
-  } else {
+
+  }
+
+  else {
+
     response = {
+
       title: "Business Website",
+
       heading: prompt,
-      description: "AI Generated Website",
-      button: "Explore",
+
+      description: "Professional AI Generated Business Website",
+
+      button: "Learn More",
+
+      theme,
+      color,
+      template,
+      darkMode,
     };
+
   }
 
   res.json(response);
+
 });
 
 app.listen(5000, () => {

@@ -25,22 +25,14 @@ function ConfigModal({ isOpen, onClose, onGenerate }) {
         <h2>🤖 AI Website Configuration</h2>
 
         <label>Theme</label>
-
-        <select
-          value={theme}
-          onChange={(e) => setTheme(e.target.value)}
-        >
+        <select value={theme} onChange={(e) => setTheme(e.target.value)}>
           <option>Modern</option>
           <option>Minimal</option>
           <option>Luxury</option>
         </select>
 
         <label>Primary Color</label>
-
-        <select
-          value={color}
-          onChange={(e) => setColor(e.target.value)}
-        >
+        <select value={color} onChange={(e) => setColor(e.target.value)}>
           <option>Blue</option>
           <option>Purple</option>
           <option>Green</option>
@@ -48,11 +40,7 @@ function ConfigModal({ isOpen, onClose, onGenerate }) {
         </select>
 
         <label>Template</label>
-
-        <select
-          value={template}
-          onChange={(e) => setTemplate(e.target.value)}
-        >
+        <select value={template} onChange={(e) => setTemplate(e.target.value)}>
           <option>Business</option>
           <option>Restaurant</option>
           <option>Portfolio</option>
@@ -64,26 +52,17 @@ function ConfigModal({ isOpen, onClose, onGenerate }) {
             checked={darkMode}
             onChange={() => setDarkMode(!darkMode)}
           />
-
           <span>Enable Dark Mode</span>
         </div>
 
         <div className="buttons">
-
-          <button
-            className="cancel-btn"
-            onClick={onClose}
-          >
+          <button className="cancel-btn" onClick={onClose}>
             Cancel
           </button>
 
-          <button
-            className="generate-btn"
-            onClick={handleGenerate}
-          >
-            🚀 Generate
+          <button className="generate-btn" onClick={handleGenerate}>
+            🚀 Generate Website
           </button>
-
         </div>
 
       </div>
