@@ -48,7 +48,7 @@ function Hero({ setWebsitePrompt }) {
   return (
     <>
       <section className="hero">
-        <h1>AI-Powered Dynamic Website Builder</h1>
+        <h1>AI-Powered </h1>
 
         <p>
           Create beautiful websites using Artificial Intelligence and deploy
