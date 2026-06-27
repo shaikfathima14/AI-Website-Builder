@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #0f172a;
+  background: #3f0314;
   color: white;
 }
 
@@ -16,7 +16,7 @@ button {
 
 :root{
     --primary:#8f0039;
-    --background:#111827;
+    --background: #3f0314;
     --card:#1e293b;
     --text:white;
 }
