@@ -8,7 +8,7 @@ function GeneratedWebsite({ websitePrompt }) {
     Black: "#111827",
   };
 
-  const primary = colors[websitePrompt.color] || "#2563eb";
+  const primary = colors[websitePrompt.color] || "#8f0039";
 
   const background = websitePrompt.darkMode ? "#111827" : "#f8fafc";
   const text = websitePrompt.darkMode ? "white" : "#111827";
@@ -153,7 +153,7 @@ function GeneratedWebsite({ websitePrompt }) {
 
       <footer
         style={{
-          textAlign: "left",
+          textAlign: "center",
           marginTop: "80px",
           opacity: 0.7,
         }}
