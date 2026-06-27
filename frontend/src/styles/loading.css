@@ -16,7 +16,7 @@
     width:80px;
     height:80px;
     border:8px solid #ddd;
-    border-top:8px solid #2563eb;
+    border-top:8px solid var(--primary);
     border-radius:50%;
     animation:spin 1s linear infinite;
     margin-bottom:25px;
@@ -33,7 +33,7 @@
 }
 
 .loading-screen h2{
-    color:#2563eb;
+    color:var(--primary);
 }
 
 .loading-screen p{

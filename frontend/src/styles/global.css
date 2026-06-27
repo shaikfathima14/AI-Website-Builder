@@ -13,3 +13,10 @@ body {
 button {
   cursor: pointer;
 }
+
+:root{
+    --primary:#8f0039;
+    --background:#111827;
+    --card:#1e293b;
+    --text:white;
+}
