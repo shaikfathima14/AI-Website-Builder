@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #3f0314;
+  background: #745004;
   color: white;
 }
 
@@ -15,8 +15,8 @@ button {
 }
 
 :root{
-    --primary:#8f0039;
-    --background: #3f0314;
-    --card:#1e293b;
+    --primary:#c78409;
+    --background: #c78409;
+    --card:#ffa200;
     --text:white;
 }
